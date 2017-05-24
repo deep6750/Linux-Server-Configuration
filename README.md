@@ -6,6 +6,7 @@ Initialisation of Linux distribution on a virtual machine and make it to host ap
 ##### Live At: http://ec2-34-224-40-187.compute-1.amazonaws.com/
   * IP Address: 34.224.40.187
   * SSH Port: 2200
+  * password for all authentication :- 12345
   
 ### Follow these instructions to Configure Linux server
 
