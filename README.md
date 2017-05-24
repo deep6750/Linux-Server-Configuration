@@ -101,7 +101,7 @@ Initialisation of Linux distribution on a virtual machine and make it to host ap
 
  * Create host config file sudo nano /etc/apache2/sites-available/catalog.conf
  * Paste the following code: 
-    ```
+ ```
     <VirtualHost *:80>
       ServerName 184.72.84.186/
       ServerAdmin admin@184.72.84.186/
@@ -119,7 +119,7 @@ Initialisation of Linux distribution on a virtual machine and make it to host ap
       LogLevel warn
       CustomLog ${APACHE_LOG_DIR}/access.log combined
   </VirtualHost>
-```
+ ```
  * Save file :- (nano: ctrl+x, Y, Enter)
  * Enable :- sudo a2ensite catalog
  * Create the wsgi file
@@ -144,7 +144,7 @@ Initialisation of Linux distribution on a virtual machine and make it to host ap
  * Configure And Enable New Virtual Host
  * Create host config file sudo nano /etc/apache2/sites-available/catalog.conf
  * paste the following:
- ```
+  ```
 <VirtualHost *:80>
   ServerName 184.72.84.186/
   ServerAdmin admin@184.72.84.186/
@@ -162,20 +162,20 @@ Initialisation of Linux distribution on a virtual machine and make it to host ap
   LogLevel warn
   CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-```
+ ```
 * save file(nano: `ctrl+x`, `Y`, Enter)
 * Enable `sudo a2ensite catalog`
 * Create the wsgi file
 * `cd /var/www/catalog`
 * `sudo nano catalog.wsgi`
 
-    ```
+  ```
   #!/usr/bin/python
   import sys
   import logging
   logging.basicConfig(stream=sys.stderr)
   sys.path.insert(0,"/var/www/catalog/")
-   ```
+  ```
  * from catalog import app as application
  * application.secret_key = 'Add your secret key'
  * save file :- nano: ctrl+x, Y, Enter
