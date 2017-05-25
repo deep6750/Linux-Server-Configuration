@@ -3,8 +3,8 @@
 ### Project Discription
 Initialisation of Linux distribution on a virtual machine and make it to host applications on web, the process include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers
 
-##### Live At: http://ec2-34-224-40-187.compute-1.amazonaws.com/
-  * IP Address: 34.224.40.187
+##### Live At: http://ec2-54-152-173-58.compute-1.amazonaws.com/
+  * IP Address: 54.152.173.58
   * SSH Port: 2200
   * password for all authentication :- 12345
   
